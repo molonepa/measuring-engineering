@@ -4,17 +4,17 @@ ___
 ## Table of Contents:
 
 1. Introduction
-..- What is software engineering?
-..- History of software engineering
-..- How can it be measured?
+⋅⋅- What is software engineering?
+⋅⋅- History of software engineering
+⋅⋅- How can it be measured?
 2. Measuring Software Engineering
-..- Version control & collaboration
+⋅⋅- Version control & collaboration
 3. Computational Platforms & Algorithmic Approaches
-..- Continuous integration
-..- Automation
+⋅⋅- Continuous integration
+⋅⋅- Automation
 4. Ethical Concerns
-..- Privacy
-..- Exploitation of labour
+⋅⋅- Privacy
+⋅⋅- Exploitation of labour
 
 ___
 
@@ -22,4 +22,4 @@ ___
 
 1. What is software Engineering
 
-...befhbfhesajfkhasjfjhfekjahsfkjhealsjhfjehafsjehfejhasjlfheakjhajklhfejkahjfleshjafehjefhkeaf
+⋅⋅⋅befhbfhesajfkhasjfjhfekjahsfkjhealsjhfjehafsjehfejhasjlfheakjhajklhfejkahjfleshjafehjefhkeaf
