@@ -9,10 +9,9 @@ ___
 
 2. Measuring Software Engineering
 - Measurable data
-- How does it help
+- How does it help?
 
 3. Computational Platforms & Algorithmic Approaches
-- Continuous integration
 - Automation
 
 4. Ethical Concerns
@@ -55,17 +54,15 @@ ___
 
 ### Measurable data
 
-There are many metrics to consider in the software engineering process, and not all of them are necessarily good metrics. Consider lines of code: to an outside observer, if an engineer is producing a larger volume of code, it may seem like he is more productive, however any decent developer knows that reducing line count is often better than increasing it, especially regarding efficiency. So I have chosen four different metrics that I think provide meaningful insight into the software engineering process:
+There are many metrics to consider in the software engineering process, and not all of them are necessarily good metrics. Consider lines of code: to an outside observer, if an engineer is producing a larger volume of code, it may seem like he is more productive, however any decent developer knows that reducing line count is often better than increasing it, especially regarding efficiency. So I have chosen three different metrics that I think provide meaningful insight into the software engineering process:
 
 - Code quality
 - Code churn
-- Refactoring and reviewing code
-- Bugs
+- Refactoring and reviewing
 
-The four are highly interconnected and I will be taking a look at how they affect each other and what they can reveal when considered.
+The three are highly interconnected and I will be taking a look at how they affect each other and what they can reveal when considered.
 
 #### Code quality
-![text](https://i0.wp.com/blog.gitprime.com/wp-content/uploads/2017/07/slide-8alt.png?resize=996%2C1024&ssl=1)
 
 To look at the productivity of engineers, you must also look at the quality of the work they are producing, after all, high productivity and low quality is far from helpful. Things to look for in measuring code quality include correctness, maintainability, readability, and test coverage. Correctness is clearly at the top of the list as, at the end of the day, it's the most important. It is also relatively easy to measure by asking one simple question: *does the code do what it's supposed to do*?
 
@@ -73,6 +70,24 @@ Maintainability is important when considering the collaborative nature of softwa
 
 Finally test coverage gives an idea of how thorough engineers are being when considering how their code works and what issues could arise when it is actually being used. Code which has covered all possible eventualities is a lot less likely to cause bugs and is also easier to fix if bugs present themselves.
 
+![img1](https://i0.wp.com/blog.gitprime.com/wp-content/uploads/2017/07/slide-8alt.png?resize=996%2C1024&ssl=1)
+
 #### Code churn
+
+Code churn is defined as lines added to, modified, or deleted from a file from one version to another. For example, a developer writes a piece of code, but it doesn't work and is discarded. The developer writes the code again, but with a different approach. Unfortunately it doesn't work either and is discarded again. Finally the third time it's written yet another way and this time it works. The developer technically produced three times the amountof code, but only one part was useful. The discarded code is the churn, and it's important to keep track of this as a developer generating a lot of churn could mean anumber of things.
+
+High churn can be expected from an engineer who is prototyping a new feature, or polishing some features in time for a release date, however it can mean bad news if it is caused by unclear requirement specification or merely can indicate that they are stuck on a difficult problem. Identifying what the causeof the churn is will help improve productivity.
+
+#### Refactoring and reviewing
+
+![img2](https://docs.microsoft.com/en-us/azure/devops/learn/_img/code-reviews-ranked-reasons.png)
+
+Peer code reviews are a standard practice in software engineering. Open source workflows especially are designed to enforce a successful peer review before the merge of a change into the main codebase. Who reviews code and accepts or blocks the change from becoming a part of the codebase is crucially important. Most engineers hope for defects to be spotted or possible improvements to be suggested by code reviews.
+
+However reviewing can cause bottlenecks if, for example, all the code produced by a team of 50 developers is being reviewed by the same two or three senior developers, because it requires heavy involvement from them. The average time from a review being requested to receiving all necessary sign-offs is about 24 hours, but can last days or weeks. Therefore I think that the amount of time spent reviewing code is an important metric in measuring software engineering.
+
+Time spent refactoring legacy code is also of interest. Say a team is spending a lot of resources refactoring in order to get ready for a release. Someone decides to increase the manpower dedicated to refactoring to meet the deadline, but as evidenced by Fred Brooks this could lead to the project being even later. Refactoring should be done in large installments so as to avoid pressure from deadlines.
+
+### How does it help?
 
 
