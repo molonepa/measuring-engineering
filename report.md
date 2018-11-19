@@ -112,11 +112,17 @@ ___
 
 ## Ethical Concerns
 
+There are a number of ethical concerns to consider when we speak of gathering large amounts of data. Two of which I will be discussing are privacy and exploitation of labour.
+
 ### Privacy
+
+One metric which I didn't discuss
 
 ### Exploitation of labour
 
-Rockstar Games, the developer behind the 'Grand Theft Auto' and 'Red Dead Redemption' series, has recently been involved in controversy regarding their 
+Rockstar Games, the developer behind the 'Grand Theft Auto' and 'Red Dead Redemption' series, has recently been involved in controversy regarding the release of their latest game. Rockstar cofounder Dan Houser stated in an interview that some staff were working 100-hour weeks in order to get the game finished for release. Overworking staff is a huge problem for game studios, and the tech industry in general, with large firms such as Apple, Lyft, and Uber all having advocated for the 'crunch culture' at some point. It turns out that in reality, during the studio's busiest week, employees averaged 50.1 hours and 20% of employees reported working 60 hours or more.[11] 
+
+Regrdless, this begs the question: *given the means of measuring their software engineers' performance, would large tech companies keep pushing their employees to the brink, or even beyond, in order to maximize profits*? I would like to believe that these techniques would be used to help engineers be more productive in the same amount of time, but there is always the possibility that they be exploited.
 
 ___
 
