@@ -117,3 +117,29 @@ ___
 ### Exploitation of labour
 
 Rockstar Games, the developer behind the 'Grand Theft Auto' and 'Red Dead Redemption' series, has recently been involved in controversy regarding their 
+
+___
+
+## Bibliography
+
+[1]: https://en.wikipedia.org/wiki/Software_engineering
+
+[2]: https://publications.computer.org/software-magazine/2018/06/08/margaret-hamilton-software-engineering-pioneer-apollo-11/
+
+[3]: https://www.linux.com/news/how-they-built-it-software-apollo-11
+
+[4]: https://www.rainforestqa.com/blog/2017-05-04-mythical-man-month-agile-software-testing-lessons/
+
+[5]: https://www.softwareengineerinsider.com/articles/what-is-software-engineering.html
+
+[6]: https://blog.gitprime.com/2017-software-developer-productivity-survey/
+
+[7]: https://blog.gitprime.com/6-causes-of-code-churn-and-what-you-should-do-about-them/
+
+[8]: https://blog.gitprime.com/why-code-churn-matters/
+
+[9]: http://engineering.kapost.com/2015/08/you-can-and-should-measure-software-engineering-performance/
+
+[10]: https://docs.microsoft.com/en-us/azure/devops/learn/devops-at-microsoft/code-reviews-not-primarily-finding-bugs
+
+[11]: http://uk.businessinsider.com/rockstar-games-controversy-explained-red-dead-redemption-2-crunch-culture-2018-10?r=US&IR=T
