@@ -90,4 +90,30 @@ Time spent refactoring legacy code is also of interest. Say a team is spending a
 
 ### How does it help?
 
+As mentioned briefly, measuring and analysing this data can help give an idea of where and how developers are falling behind, and how to optimize their ability to work effectively.
 
+___
+
+## Computational Platforms & Algorithmic Approaches
+
+Processing these datasets can be easy on a small scale, but larger teams mean larger datasets and this can be problematic. In the following subsections I will discuss the tools and approaches available to work around these problems
+
+### Tools available
+
+**git** is an immensely helpful tool when it comes to the metrics that I discussed earlier. It provides version control, which means that any changes to a codebase can be identified and viewed, which is very helpful in identifying code churn. Also the authors of the changes can be looked at, making it very simple to determine code quality. Senior developers can also review another developers code using **git**.
+
+The company **GitPrime** offers this service. Their approach is to take in data from any **git**-based code repository - such as GitHub, GitLab, or BitBucket - and use it to optimize work patterns among engineers. They process the data and display it in a more human-readable form using libraries such as d3, to be able to identify patterns and adjust accordingly.
+
+### Automation
+
+As the datasets grow it becomes more difficult for humans to come up with meaningful conclusions, which is where artificial intelligence and machine learning come into play. Convolutional Neural Networks (CNNs) are replacing hand coded rules by directly building inference networks from data. This means that gathering *good* data is a new and very important discipline as your inference is only as good as your data. Equally CNNs, owing to their opacity (since humans aren't responsible for codifying the rules), can reinforce and amplify human bias.
+
+___
+
+## Ethical Concerns
+
+### Privacy
+
+### Exploitation of labour
+
+Rockstar Games, the developer behind the 'Grand Theft Auto' and 'Red Dead Redemption' series, has recently been involved in controversy regarding their 
