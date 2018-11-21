@@ -19,7 +19,9 @@ ___
 - Privacy
 - Exploitation of Labour
 
-5. Bibliography
+5. Conclusion
+
+6. Bibliography
 
 ___
 
@@ -41,13 +43,13 @@ The early days of software engineering was like navigating a wilderness. No one 
 
 Software development in the **Apollo program** was very structured, but very reliable, "Not only did the software itself have to be ultra-reliable, it needed to be able to perform error detection and recovery in real time."[2] Software was programmed on **IBM** punch cards, which had 80 columns and were 'assembled' to instruction binary on mainframes, which could take hours, thus during missions, most of the software could not be changed, as it was encoded into the hardware like ROM. Some engineers would even "[guess] and make up minor changes to the software to work around [hypothetical] failures that were thrown at the flight control team during simulations."[3]
 
-The **NASA** engineers of the **Apollo program** made extraordinary accomplishments with the relatively primitive hardware and software available to them, and thanks to the rigorous design methods set out by Hamilton, they knew each line of code so well that they were able to read out binary settings to the astronauts by radio. This was essential when, during the **Apollo 11** mission, several warning lights and computer overload alarms came on as the craft was descending onto the moon's surface. John Garman's pre-flight simulation experience as an engineer told him that the alarms were not critical and the landing could continue. If not for him the mission would have been aborted and the astronauts would have remained in orbit around the moon.
+The **NASA** engineers of the **Apollo program** made extraordinary accomplishments with the relatively primitive hardware and software available to them, and thanks to the rigorous design methods set out by Hamilton, they knew each line of code so well that they were able to read out binary settings to the astronauts by radio. This was essential when, during the **Apollo 11** mission, several warning lights and computer overload alarms came on as the craft was descending onto the moon's surface. John Garman's pre-flight simulation experience as an engineer told him that the alarms were not critical and the landing could continue. If not for him the mission would have been aborted and the astronauts would have remained in orbit around the moon.[3]
 
-Over the following two decades a number of problems and disasters lead to the period being referred to as the 'Software Crisis'. Much of the emphasis during this time was placed on productivity rather than quality, causing budget and schedule overruns. An example of this is recounted in the book, *The Mythical Man-Month* by Fred Brooks, where he attributes a multimillion-dollar mistake to not having developed a coherent architecture before starting development. His observations that "adding manpower to a late software project makes it later"[4] and that "a programming product costs at least three times as much as a debugged program with the same function"[4] come from his experiences at **IBM** while managing the development of **OS/360**, where he decided to add more programmers to a project that was falling behind schedule, which counter-intuitively worsened the situation. Other disasters from this period include poor software security, which allowed hackers to steal identites, costing time, money, and reputations, and some embedded systems used in radiotherapy machines failed, causing lethal doses of radiation to be administered to patients. The most famous of such incidents was the *Therac-25* incident, which resulted in the deaths of three people.
+Over the following two decades a number of problems and disasters lead to the period being referred to as the 'Software Crisis'. Much of the emphasis during this time was placed on productivity rather than quality, causing budget and schedule overruns. An example of this is recounted in the book, *The Mythical Man-Month* by Fred Brooks, where he attributes a multimillion-dollar mistake to not having developed a coherent architecture before starting development. His observations that "adding manpower to a late software project makes it later" and that "a programming product costs at least three times as much as a debugged program with the same function" come from his experiences at **IBM** while managing the development of **OS/360**, where he decided to add more programmers to a project that was falling behind schedule, which counter-intuitively worsened the situation. Other disasters from this period include poor software security, which allowed hackers to steal identites, costing time, money, and reputations, and some embedded systems used in radiotherapy machines failed, causing lethal doses of radiation to be administered to patients. The most famous of such incidents was the *Therac-25* incident, which resulted in the deaths of three people.[4]
 
 The major changes in the software engineering process since then have been the introduction of version control and collaboration, and the rise of the open-source movement due to the internet. The open-source movements impact on software engineering productivity has been immense, with a significant number of the languages, tools, and frameworks used by developers daily stemming from it. Furthermore the features provided by tools such as git have hugely facilitated engineers working on large-scale collaborative projects, meaning that disasters such as the **OS/360** are more easily avoided.
 
-These tools can also prove useful in measuring the software engineering process. In the following sections I will discuss thoroughly the measurable data, the computational platforms and algorithmic approaches available to someone who would want to measure this data, and in my opinion the possible ethical concerns which one should consider in measuring the data.
+These tools can also prove useful in measuring the software engineering process. In the following sections I will discuss thoroughly the measurable data, the computational platforms and algorithmic approaches available to someone who would want to measure this data, and the possible ethical concerns which one should consider in measuring the data.
 
 ___
 
@@ -61,7 +63,7 @@ There are many metrics to consider in the software engineering process, and not 
 - Code churn
 - Refactoring and reviewing
 
-The three are highly interconnected and I will be taking a look at how they affect each other and what they can reveal when considered.
+The three are highly interconnected and I will be taking a look at how they affect each other and what they can reveal when considered. These are qualitative rather than quantitative parameters, which are not as straightforward, but provide more information.
 
 #### Code Quality
 
@@ -77,9 +79,9 @@ Finally test coverage gives an idea of how thorough engineers are being when con
 
 #### Code Churn
 
-Code churn is defined as lines added to, modified, or deleted from a file from one version to another. For example, a developer writes a piece of code, but it does not work and is discarded. The developer writes the code again, but with a different approach. Unfortunately it does not work either and is discarded again. Finally the third time it's written yet another way and this time it works. The developer technically produced three times the amount of code, but only one part was useful. The discarded code is the churn, and it's important to keep track of this as a developer generating a lot of churn could mean a number of things.
+Code churn is defined as lines added to, modified, or deleted from a file from one version to another. For example, a developer writes a piece of code, but it does not work and is discarded. The developer writes the code again, but with a different approach. Unfortunately it does not work either and is discarded again. Finally the third time it's written yet another way and this time it works. The developer technically produced three times the amount of code, but only one part was useful. The discarded code is the churn, and it's important to keep track of this as a developer generating a lot of churn could mean a number of things.[7]
 
-High churn can be expected from an engineer who is prototyping a new feature, or polishing some features in time for a release date, however it can be problemaric if it is caused by unclear requirement specification or merely can indicate that they are stuck on a difficult task. Therefore identifying the cause of the churn will help improve productivity.
+High churn can be expected from an engineer who is prototyping a new feature, or polishing some features in time for a release date, however it can be problemaric if it is caused by unclear requirement specification or merely can indicate that they are stuck on a difficult task. Therefore identifying the cause of the churn will help improve productivity.[8]
 
 #### Refactoring & Reviewing
 
@@ -95,13 +97,13 @@ Time spent refactoring legacy code is also of interest. Consider a team spending
 
 ### How Does It Help?
 
-As mentioned briefly, measuring and analysing this data can help give an idea of where and how developers are falling behind, and how to optimize their ability to work effectively. They can help a team to perform more work in the same amount of time, or the same amount of work in less time. Finally they can make the software engineering process more cost effective by minimising time wasted reviewing, refactoring, and debugging.
+As mentioned briefly, measuring and analysing this data can help give an idea of where and how developers are falling behind, and how to optimise their ability to work effectively. They can help a team to perform more work in the same amount of time, or the same amount of work in less time. Finally they can make the software engineering process more cost effective by minimising time wasted reviewing, refactoring, and debugging.
 
 ___
 
 ## Computational Platforms & Algorithmic Approaches
 
-Processing these datasets can be easy on a small scale, but larger teams mean larger datasets and this can be problematic. In the following subsections I will discuss the tools and approaches available to work around these problems.
+Processing these datasets can be easy on a small scale, but larger teams mean larger datasets and this can be problematic. In the following subsections I will examine the tools and approaches available to work around these problems.
 
 ### Tools
 
@@ -119,17 +121,23 @@ ___
 
 ## Ethical Concerns
 
-There are a number of ethical concerns to consider when we speak of gathering large amounts of data. Two of which I will be discussing are privacy and exploitation of labour.
+There are a number of ethical concerns to consider when we speak of gathering large amounts of data. Two of which I will be exploring are privacy and exploitation of labour.
 
 ### Privacy & Security
 
-Some metrics which were not discussed include biometrics, such as heart-rate, fingerprints, facial recognition. As we have seen recently, large firms such as **Facebook** are not impervious to data breaches, and if a company is tracking these data from iots employees, a data breach could potentially lead to stolen identites. Tracking biometrics is a step too far, but the danger is that it becomes more commonplace in the future.
+Some metrics which were not touched upon include biometrics, such as heart-rate, fingerprints, facial recognition. As we have seen recently, large firms such as **Facebook** are not impervious to data breaches[13], and if a company is tracking these data from its employees, a data breach could potentially lead to stolen identites. Many claim that tracking biometrics is a step too far, and the danger lies in the possibility it becomes more commonplace in the future.
 
 ### Exploitation of Labour
 
 **Rockstar Games**, the developer behind the 'Grand Theft Auto' and 'Red Dead Redemption' series, has recently been involved in controversy regarding the release of their latest game. **Rockstar** cofounder Dan Houser stated in an interview that some staff were working 100-hour weeks in order to get the game finished for release. Overworking staff is a prevalent issue in game studios, and the tech industry in general, with large firms such as **Apple**, **Lyft**, and **Uber** all having advocated for the 'crunch culture' at some point. It turns out that in reality, during the studio's busiest week, employees averaged 50.1 hours and 20% of employees reported working 60 hours or more.[11] 
 
 Regrdless, this begs the question: *given the means of measuring their software engineers' performance, would large tech companies keep pushing their employees to the brink, or even beyond, in order to maximize profits*? I would like to believe that these techniques would be used to help engineers be more productive in the same amount of time, but there is always the possibility that they be exploited.
+
+___
+
+## Conclusion
+
+In this paper I discussed the origins of software engineering, and the need to measure the process. I proposed three metrics, that in my opinion provide a good qualitative view of software engineers' productivity, and put forward the possible methods and implications of measuring them.
 
 ___
 
@@ -182,3 +190,7 @@ ___
 12. http://www.se-radio.net/2018/02/se-radio-episode-317-travis-kimmel-on-measuring-software-engineering-productivity/
 
 [12]: http://www.se-radio.net/2018/02/se-radio-episode-317-travis-kimmel-on-measuring-software-engineering-productivity/
+
+13. https://www.theguardian.com/technology/2018/jul/11/facebook-fined-for-data-breaches-in-cambridge-analytica-scandal
+
+[13]: https://www.theguardian.com/technology/2018/jul/11/facebook-fined-for-data-breaches-in-cambridge-analytica-scandal
